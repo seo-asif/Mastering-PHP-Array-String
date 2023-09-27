@@ -13,7 +13,7 @@ function generatePassword($length)
     $password .= $number[rand(0, strlen($number) - 1)];
     $password .= $specialChars[rand(0, strlen($specialChars) - 1)];
 
-    $passwordString = $lowercaseChars . $uppercaseChars . $specialChars;
+    $passwordString = $lowercaseChars . $uppercaseChars .$number. $specialChars;
     $passLength = strlen($passwordString) - 1;
 
     // Generate the remaining characters of the password
@@ -24,7 +24,7 @@ function generatePassword($length)
 
     // Shuffle the password to randomize character positions
     $password = str_shuffle($password);
-    echo ($password);
+    echo $password;
 }
 
 
