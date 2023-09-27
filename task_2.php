@@ -7,9 +7,7 @@ function isOdd($value){
 }
 function removeEvenNumbers(&$array){
     $array = array_filter($array,'isodd');
+    print_r($array);
 }
 
 removeEvenNumbers($numbers);
-
-
-print_r($numbers);
