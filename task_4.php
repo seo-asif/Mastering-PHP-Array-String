@@ -51,7 +51,9 @@ function average ($gradeValue){
     $gradeOfStudent3 = gradeChecker($avgOfStudent3);
 
    
-    echo "Student_1's Grade: $gradeOfStudent1\nStudent_2's Grade: $gradeOfStudent2\nStudent_3's Grade: $gradeOfStudent3\n";
+    echo "Student_1's Grade: {$gradeOfStudent1}\n";
+    echo "Student_2's Grade: {$gradeOfStudent2}\n";
+    echo "Student_3's Grade: {$gradeOfStudent3}\n";
 }
 
 average($studentGrades);
